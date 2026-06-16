@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>trying</title>
+
+    <style>
+
+body{
+
+    overflow-x: hidden;
+
+    background-color: bisque;
+
+}
+
+.fullsizw{
+
+    height: 100vh; width: 100vw;
+    display: grid; grid-template-columns: 50% 50%; grid-template-rows: 30% 30% 30% 30%;  text-align: center;
+
+
+}
+
+    </style>
+
+
+</head>
+
+<body>
+
+    
+    <div class="fullsizw"> 
+
+    <div class="pre">
+
+        <h1>User login :</h1>
+
+
+        <input id="name" type="text" placeholder="enter the name">
+        <input type="password" placeholder="Enter your password" id="password"><br>
+        <input id="submit" type="submit" value="submit">
+
+        <h1 id="h1"></h1>
+        
+         <h1 id="h2"></h1>
+    </div>
+
+
+    
+    <div class="re">
+
+        <h1>Radius finder :</h1>
+
+        <input id="radius" type="text" placeholder="enter the raduis" required><br>
+
+        <button id="mysubmit">Submit</button> <br>        
+        
+         <h1 id="a1"></h1>
+    </div>
+
+
+
+    <div class="counter">
+
+        <h1>Number counter :</h1>
+
+        <label id="num">0</label> <br>
+        <button id="increasebtn" class="button"> Increase </button>
+        <button id="decreasebtn" class="button"> Decrease </button>
+        <button id="resetbtn" class="button"> reset </button>
+
+    </div>
+
+    <div class="math">
+
+        <h1>Generating random number</h1>
+
+
+    <button id="randNumGen">Generate Random Num :</button>
+ 
+    <label id="randNum"></label>        
+
+
+    </div>
+
+
+
+    <div class="if">
+
+        <h1>Checking the users AGE :</h1>
+
+        <br><input id="enterAge" type="number" placeholder="enter your age :">
+        <button id="ageBtn"> submit age</button>
+
+        <br><label id="showAge"></label>
+        <br><label id="showLicensee"></label>
+    </div>
+
+
+
+    <div class="checked">
+
+        <h1>checked or NOT</h1>
+
+        <input type="checkbox" id="studentCheckBox" name="checkbox">
+        <label for="studentCheckBox">Student</label><br>
+
+        <input type="radio" id="divAStud" name="radio">
+        <label for="radio">Div A</label><br>
+        <input type="radio" id="divBStud" name="radio">
+        <label for="radio">Div B</label><br>
+
+
+        <label id="showStudent"></label> <br>
+
+        <input type="checkbox" id="teacherCheckBox" name="checkbox">
+        <label for="teacherCheckBox">Teacher</label><br>
+        
+        
+        <input type="radio" id="divATeach" name="radio1">
+        <label for="radio">Div A</label><br>
+        <input type="radio" id="divBTeach" name="radio1">
+        <label for="radio1">Div B</label><br>
+
+
+        <label id="showTeacher"></label> <br>
+
+        <button id="submitInfo">Submit Info</button>
+
+
+    </div>
+
+
+    <div class="gradeFin">
+
+        <h1>Grade finder using Switch case : </h1>
+
+        <input id="gradeMarks" type="number" placeholder="Enter your Grade marks">
+
+        <button id="gradeBtn">Submit Grade Marks</button> <br>
+
+        <label id="gradeMarksShow"></label>
+
+    </div>
+
+
+    </div>
+
+
+        <script src="Trying.js"></script>
+
+
+
+
+
+</body>
+</html>

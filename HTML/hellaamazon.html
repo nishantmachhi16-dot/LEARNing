@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Mobile Shopping Storefront</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,typography"></script>
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<script>
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        primary: "#febd69", // Amazon-like orange
+                        "primary-dark": "#232f3e", // Amazon-like navy
+                        "background-light": "#eaeded",
+                        "background-dark": "#131921",
+                    },
+                    fontFamily: {
+                        display: ["Inter", "sans-serif"],
+                    },
+                    borderRadius: {
+                        DEFAULT: "4px",
+                    },
+                },
+            },
+        };
+    </script>
+<style>
+        body { font-family: 'Inter', sans-serif; -webkit-tap-highlight-color: transparent; }
+        .hide-scrollbar::-webkit-scrollbar { display: none; }
+        .hide-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-background-light dark:bg-background-dark text-gray-900 dark:text-gray-100 min-h-screen flex flex-col">
+<header class="bg-primary-dark sticky top-0 z-50 pt-2 pb-1 px-3 shadow-md">
+<div class="flex items-center gap-2">
+<div class="relative flex-grow">
+<span class="material-icons-outlined absolute left-2 top-1/2 -translate-y-1/2 text-gray-500">search</span>
+<input class="w-full pl-9 pr-10 py-2 rounded-lg bg-white border-none focus:ring-2 focus:ring-primary text-sm shadow-inner text-gray-900" placeholder="Search our store" type="text"/>
+<span class="material-icons-outlined absolute right-2 top-1/2 -translate-y-1/2 text-gray-400">camera_alt</span>
+</div>
+</div>
+<div class="flex items-center gap-1 mt-2 mb-1 px-1">
+<span class="material-icons-outlined text-white text-sm">location_on</span>
+<span class="text-white text-xs font-medium">Deliver to Alex - Dallas 75201</span>
+</div>
+</header>
+<main class="flex-grow overflow-y-auto">
+<section class="relative h-64 overflow-hidden">
+<img alt="Easter gifts for kids promotion" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB1NQUfj693_PRxUmbclexVfXx5hKoIFdLCXHYUKg1UjjJ_cmKY6-EZCtLQwf26nGOer0vdhE0LjIevmgjcdllSAlDbtYCxBpf-gPhLET-ciBJ_wfpbRM2wGBuicSpIuFI2ASFJg7RK1t1U5p5DcUAKlzVDyZl7kyhVbz7ie3GwXX8zq2tqt8K9G4eBU24y7WtvTPuJDY5tFncsxLYBR02022PkIul9sewix6pEsPEaMaO3qCLwx1Xx1EJ6FsUmB-D56txQHXiA_JvO"/>
+<div class="absolute inset-0 bg-gradient-to-r from-pink-400/80 to-transparent flex flex-col justify-center px-6">
+<p class="text-white font-bold text-xs uppercase tracking-wider mb-1">Easter gifts for kids</p>
+<h1 class="text-white text-3xl font-extrabold leading-tight">Our Top 100<br/>basket stuffers</h1>
+<button class="mt-4 bg-white/90 text-gray-900 px-4 py-2 rounded-full text-xs font-bold w-max shadow-sm">Shop now</button>
+</div>
+</section>
+<div class="px-3 -mt-10 relative z-10 space-y-4 pb-20">
+<div class="bg-white dark:bg-gray-800 p-4 rounded shadow-sm">
+<h2 class="text-lg font-bold mb-3">Curated vacation looks</h2>
+<div class="grid grid-cols-2 gap-3">
+<div class="space-y-1">
+<div class="bg-gray-100 dark:bg-gray-700 aspect-square rounded overflow-hidden">
+<img alt="Swimwear" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAB3FjhIxna_Y6cM7Dx8XjjVEOdxAzEkYgGRYnzgD9AjSeZU7WzQlXPB8ZfgAFtLzVD9dXB1nq_nNKm0A5i7iGuyZRiBXp5u5aNBMYZkVuBE1YFczsmo4tIksPZFEQy6IxNXxCoSAgAF999y9BabwHTEDLu1kJTsfGYOKRnRxbDX0GSOXarYqT_9Kmm9dvmM-7ild0cIz0ooq5Ta7uBvgGE6jmjFezuypDFurGa1FHXnvZm1yI8MyM29R2YhLBNyNl9RDKuiwCrkejY"/>
+</div>
+<p class="text-xs font-medium">Swim</p>
+</div>
+<div class="space-y-1">
+<div class="bg-gray-100 dark:bg-gray-700 aspect-square rounded overflow-hidden">
+<img alt="Beauty" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuA4iQr6rKIt2dANzkV5l8CYHvUA-7of0MyV5aeQNUtcbcUb8QaDbOIZJ-wfbcrRvb-2F2d7WlqGN7td1bg6q66bUAN_p4Otrfo4UqhtHnCdQyJgEWJMJEarVQM9g_U2jTGJh__O3PFwLxk55xDa-9D4dmWSGW_lQeR2ZIrzQ_2pDinxtEJVhigV6lDWFwRgdgZqbtqKFnlGYJuFgwJb6p09qwxuf2gZY1IdpOFSI6z3aU2bW4aUtn8ipN7wweUSYQDRu1NCADaxgcVn"/>
+</div>
+<p class="text-xs font-medium">Beauty</p>
+</div>
+<div class="space-y-1">
+<div class="bg-gray-100 dark:bg-gray-700 aspect-square rounded overflow-hidden">
+<img alt="Accessories" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCpjFlNc21aNzsgTwaMqb4COgRTU2ow6nEFHxdVr1tFBxIgYKiV2EyEcqEtR29zUM--4f7KgbjuHWQN6boxws7wsQYAl9_-I8BF9ZVqMZJGcbMPhwy0ExrLNt3HWVaIzGEbf3Et8dA74xMcV3LuigNtXfTTwFnMXYb492_5b-BucPJfyjUTwN6qQn8bO05oBQjSkRgY2urc2oMHsFL9IPeG3Shgv2Wbr9gP7qoc3G6CkzaBsuvk0pyFOb-OQBOJwFN5u-_F38qZBU2b"/>
+</div>
+<p class="text-xs font-medium">Accessories</p>
+</div>
+<div class="space-y-1">
+<div class="bg-gray-100 dark:bg-gray-700 aspect-square rounded overflow-hidden">
+<img alt="Apparel" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBNkqtstZG0K2NdF60boI4KLkTaEZG9pVo5vkTMzaYKO8R9KGdGVo0P5k7AdgjDs5BhJHT_bRXxq0E1jzFf_X4NYm1Ok7u6FQTDU66f50_KeyqyqTYPyiKEMNFyQ7rHIJA_TT__CkTDgGah4QsD68IkjovPywOcqc8jhZsTO5YFvyWV5-bU_Qc5MxkKULK3_4ck2LGT3tYMeRaHxAYloFP7to8jgs3FIyRcaZJPitdQ5euG6UaaNnQGS-rrg5V3VTvLdMqasDNUfKO6"/>
+</div>
+<p class="text-xs font-medium">Apparel</p>
+</div>
+</div>
+<button class="mt-4 text-sm text-blue-600 dark:text-blue-400 font-medium">Shop resort wear</button>
+</div>
+<div class="bg-white dark:bg-gray-800 p-4 rounded shadow-sm">
+<h2 class="text-lg font-bold mb-3">Best Sellers in Electronics</h2>
+<div class="flex overflow-x-auto gap-4 hide-scrollbar">
+<div class="flex-shrink-0 w-32">
+<img alt="Macbook" class="h-32 w-32 object-contain bg-gray-50 dark:bg-gray-700 rounded mb-2" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBECr8Nc0aiGUztyNPO5W2D-NL0dee0iukF34V19x8l4T4XwHTXFbebojHb2jWp3p9S6mttVS7HquLoiaVdZ_TbdT01akUM9rlyWJBSxvxOkQKyhevRDsTmYGbIuuFQzlMYqCgD46-XV6ZlbLBo9VsGWOCcbAYwL-Ojr8D_m-lrHwXj7SvEoQYVCP6U3D5EsybX0CrLR79nhSuk28sxdb8ONEI8loivu3fzZDlHJuLfEuPH3UbNSIkPMRhd6oGhuvAcCRzXDXc1fd94"/>
+<p class="text-xs line-clamp-2">MacBook Air with M2 chip, 13.6" Liquid Retina Display</p>
+</div>
+<div class="flex-shrink-0 w-32">
+<img alt="iPad" class="h-32 w-32 object-contain bg-gray-50 dark:bg-gray-700 rounded mb-2" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDdY2FEZhA_2-BtfkT36OuttVNf0jrQSCFqpJkawTk2L-vKFP1UiwuiuWkJmz2e2MnnbK525wsBl6qG18dGKs5m2EsnBeEwpw_eTl0GUE_bsPU6UG4VzXxBIH_TiCLqSrz8bAvvudQ1zPOXFTZKbiRKagMzWcyvT1xi5Ll22f1p-bb7bncxQNBVrfA2vcQ3PN8dFIf_vKABjjvVxoMThf2xcBZ8GDyznHPSLJ2_MHmcjwqpiXG0j4CAdFMAu50oAOxXO4R5DZLD7Oou"/>
+<p class="text-xs line-clamp-2">iPad Pro 12.9-inch (6th Generation) M2 Chip</p>
+</div>
+<div class="flex-shrink-0 w-32">
+<img alt="Headphones" class="h-32 w-32 object-contain bg-gray-50 dark:bg-gray-700 rounded mb-2" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBdBmnhxQ93gBXKdReFzZ_PsYvPBWeEE5qR_hN6RyH7x73SFj804qzUnoD2tUUaS_NQJ22NNEouL1xsnMcab8AZ1rnVw9A0aS10hSw5MXsTbHlGPbP43PQX7nFmooX3xQIBqo97jwnkPE-VPErEWjOR7qlfghMzIVJxa5vwSsuqd1OWvtD5nTnJy6IZqI8luPbEVKtz1O9voRE0aMvTvwWheMNR20Ur4OGQ37zsA6wUT4NWMvUkqnRsiB60ySnOVfsDl6Hk9W3-4EEN"/>
+<p class="text-xs line-clamp-2">Premium Noise Cancelling Headphones</p>
+</div>
+<div class="flex-shrink-0 w-32">
+<img alt="Watch" class="h-32 w-32 object-contain bg-gray-50 dark:bg-gray-700 rounded mb-2" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD7Sb2VLQ4YxzV3DzdUzHfQ6VruclKgFOwNKrxUUztX8XRRsjtYK3ICU2mOjtpCd4BELn8VAWgqXg4zFYF2F6gKC2H7we385_mfvPQ646zvRcu5rNY3Qmdh8l40PQ7gEMb2-6z4Oob9ObkM22iRjVf_TJshuJ6CSDthJSlwBUnvRRzHpHTqmWLyWA5H4MMKbL3UPkAxCBq1dNy9s0aapMM4rRrovd_CKZ-onNqkQnET6FRONvtaWMso31SQpqmiBYpFlSG2C78vYXhF"/>
+<p class="text-xs line-clamp-2">Smart Watch with Fitness Tracking</p>
+</div>
+</div>
+</div>
+<div class="bg-white dark:bg-gray-800 p-4 rounded shadow-sm">
+<h2 class="text-lg font-bold mb-3">Best Sellers in Books</h2>
+<div class="flex overflow-x-auto gap-3 hide-scrollbar">
+<img alt="Book 1" class="h-44 w-32 object-cover rounded shadow-sm" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDuXbsrS0RcE0iXpTk34ed7p2FtjQ1E3eRVbFyt0lykK36sBZ1hlFCqAEczSTWHex89FVbvIsET0PI71BOLUoX5YjMEqbgUijo3EhyAgKaMZQ_bmLqEwaOn8bxImyAIq3yv2ZTHR1m-VLWyCWGbpPdFvVZU1VLhONoNcvBvIw9bDU-YNFj7knL5NWlOdDtF-UPJOs8I0L9i1D3xhjwb8j5ZCDsHgG31jTrsc3C2Pv1EsfGkvMnDM3lEUt3wglP6IIUx0DHB_dMpMT5R"/>
+<img alt="Book 2" class="h-44 w-32 object-cover rounded shadow-sm" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDXKScWSdpIzwKMdCZj5493b8RIsWc6srwflMy_RVV_nRC8SAqOmB8zGZg1mT98E6VRBGsZAqqfFYDU8-3osMNxi09WHlI2ABj-F6EzYDJTZEcXsoCerAPkYg_DovYcVewK7DhdbuoFxFvC_7mlj-sjveZaf-82LiyWyJNP7lfzyoRQk0oZR7csehY7-mubSPaTz9ZFVSLf8ZgurBHtgh7iHXF7CXUU5UVNzAPhICL1hZRCcMNeHsxP2qGkrSKIcM3NlAYRHXBote4g"/>
+<img alt="Book 3" class="h-44 w-32 object-cover rounded shadow-sm" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAwtpSxuI1E2WOBNWD1BNEM984fawsK3WNWVmsR4Q3xR_Jn9zcoMJLLSv9eNJS-HeZj5hPqXXHHxU8QVMdReoRncxL5iVg8xxWq75XYAj-40neQhUYpo9NXXrvLoHZKf19-dXs8h-K7EJl0bE9dHvLeVgkVnxKjvqIJvI3p2W5sIW6EmLtb4WZl6jpsy4FMlw2MCIx8VpXk_KneUl6N4M0qxKY4QeNAjPTbXn41lbifSgmmFGldti1-LQw0Vq1BxdM6-73EmSvM3iAm"/>
+</div>
+</div>
+<div class="bg-white dark:bg-gray-800 p-4 rounded shadow-sm">
+<h2 class="text-lg font-bold mb-3">Shop spring trends</h2>
+<div class="grid grid-cols-2 gap-3">
+<div class="space-y-1">
+<div class="aspect-square bg-gray-50 dark:bg-gray-700 rounded overflow-hidden">
+<img alt="Dress Shop" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCavpVVnm8Pi-nTjuo4Me56P_pvjz2kaLJiLh9tguAHgDy1NRpg6FlO-m3lV73QAdxyEOS-DGnmmiLDUjcmnTS_e51forVGT04oP1iGrp94QkNpyRg_c8ZkcFyxUWNzrLVtnXz2h6BW21O1HdP5UbdLextWs4MUHiPpJ-zogtJYNm6CQzjP2IlosHLN95tPmRJF8V1FChKfFhDcfbRqEZMFjLj63sznq-17T3klXpiWXylzU4va79mhJPSe6DihNiyvZav-kBY6iDcw"/>
+</div>
+<p class="text-[10px] font-medium uppercase tracking-tight">The dress shop</p>
+</div>
+<div class="space-y-1">
+<div class="aspect-square bg-gray-50 dark:bg-gray-700 rounded overflow-hidden">
+<img alt="Eyewear" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAefJE3Gwq5G6Pi78RXwuL9QMLsPUhBDK8iZhUmP60B-xnzn6cziHSti-IosXiGqsveZVqkIC-0V29Z-MSYqfVcSfEu_csE1IrRVccrruE4s9MvfZfgDod7mvwFO-oK8EuubSYVOhvUYt7DMsowJpbVnUWPHj9F3bvIUNl8O8JTEaDXkbcBwo7u0PvwU_UiUAYBxDeZZdHpYoXX5K1TMiifCbCf1Z_yUDC7GW2zXtTwasCqHsTxVWNLy_vR5k4mCAQjuzag0spscsH9"/>
+</div>
+<p class="text-[10px] font-medium uppercase tracking-tight">Sunglasses &amp; eyewear</p>
+</div>
+<div class="space-y-1">
+<div class="aspect-square bg-gray-50 dark:bg-gray-700 rounded overflow-hidden">
+<img alt="Bags" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAd_W2eZxWasaYPfoTnc80ECTLxARnZqc7QLxYvdJzS9sL2W8K78A7rfvwe6ynyqWsg5aHDImLodqKnQcooYvZ1NiMgIdbRYVLnfbt5QBuS_fUQvl-hdnXHUUflDZCDGoIoXJzzA-PoXt6EBhRpQr4Xpb_lfA7cp560TZBnXmyRxxYgoaNvrZ9QhlnI7IIKwSfzMINGIQoRcDVeh2gjq2ZMzWTTJYnSIWGzqAIL7Yy_EUCnIxQqpTfdUWBtSHczWhVV2OHY6ZQWcFy7"/>
+</div>
+<p class="text-[10px] font-medium uppercase tracking-tight">Handbags</p>
+</div>
+<div class="space-y-1">
+<div class="aspect-square bg-gray-50 dark:bg-gray-700 rounded overflow-hidden">
+<img alt="Shoes" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDhm7iN0EV7Yjvd7LA1rNAXQ2A_6G3J8NZsCyaw0vcDmRUDMhw6kFVXG3wGutMQ0f2VIUZIn_PIi4nZZqeVhJoeB3HFGdS82-sCgzLqd96iKO8OfPuA0zcUnNbqCo4sGeiW0MfSfDVnodwTtqwQoyOIsruIGbpnRXPUSteFs9sI1LE8rLO28PGtA1CIhZ21BsRs7epuJPPWWlnx_ri7fcQwSdpjCfbvM4yByF5_rhnyKEXwcitg7-yDUw48O5IpDcolVKC3Ihu9lbIu"/>
+</div>
+<p class="text-[10px] font-medium uppercase tracking-tight">Footwear</p>
+</div>
+</div>
+<button class="mt-4 text-sm text-blue-600 dark:text-blue-400 font-medium">Explore trends</button>
+</div>
+<div class="bg-white dark:bg-gray-800 p-4 rounded shadow-sm">
+<h2 class="text-lg font-bold mb-3">Best Sellers in Kitchen &amp; Dining</h2>
+<div class="flex items-center justify-center p-4 bg-gray-50 dark:bg-gray-700 rounded">
+<img alt="Coffee Maker" class="max-h-48 object-contain" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAsEVtDhF5eXreSAJj6h7x6nP8WXhyMSXU7dasfFLbp_yEtQQK3QkjKvwlKCvO2XvecU_hxYn9QOXKJk1WUeAqnLl-zIaH-8WwruMfhk3PVgiC-NZ9kCrt_EROxAqfBHeW6JQ2gmTY2fKyqrqIgapkarsODrhqo7msUYyshrroorvudakNprG1vLTLCHtW84Ix1divzdJT6bmpFUhMXAJA1e98rhEHWqok5mEv6687iefaKZU53op0dAzMpbssypKIzJj8y8G3JdNFS"/>
+</div>
+<p class="mt-2 text-sm">Professional Espresso Machine with Milk Frother</p>
+<div class="flex items-center gap-1 mt-1">
+<span class="material-icons-outlined text-yellow-500 text-sm">star</span>
+<span class="material-icons-outlined text-yellow-500 text-sm">star</span>
+<span class="material-icons-outlined text-yellow-500 text-sm">star</span>
+<span class="material-icons-outlined text-yellow-500 text-sm">star</span>
+<span class="material-icons-outlined text-yellow-500 text-sm">star_half</span>
+<span class="text-xs text-blue-600 dark:text-blue-400">12,408</span>
+</div>
+</div>
+<div class="bg-white dark:bg-gray-800 p-4 rounded shadow-sm">
+<h2 class="text-lg font-bold mb-3">Baby Sale: Up to 30% off</h2>
+<div class="grid grid-cols-2 gap-3">
+<div class="bg-blue-50 dark:bg-blue-900/20 p-2 rounded">
+<img alt="Car seat" class="w-full aspect-square object-contain mb-2" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCqYf0S9PXMq-L0FbMf6MK6xaccUJrHK4KRkbJ6JiSXsCNI8DL3XO9ICgN39oDkBTAAeHtSmKNbpR4PTn6yZENdYiieTXBCM1UIEkK40-_iRN1blRGhiFd_wTV7pBhsyupDYf-Ciie8iqTWvhefY2UYHaf0R88OTjG702hCwtEsLr4gDHUCi2qVISmk1ENigXNha2nqrzDamj4GSWcYrogXawNXaXjdOAadghaAR-QHKpO8Q-MuhINL9rmbZ_ShScZZeBgL6pt5RUAa"/>
+<p class="text-xs font-medium text-center">Car Seats</p>
+</div>
+<div class="bg-blue-50 dark:bg-blue-900/20 p-2 rounded">
+<img alt="Feeding" class="w-full aspect-square object-contain mb-2" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD4GcEgAZY0jARCINA4cyLxEC_4G4ZzUsY1bbrnhBmLe5l5mxOC1bng6FXJ7r8fwPq3fae6As6q161n70x_QdvzOm1OUszR2aWtmOcokq_szBMEfF5LnsZfwDpLYUsoyxpYjGCMkOZqDyEYsNef704tGRx7dzq8m3stnTCSerJkVCCiCMesuuJu_wprzG6_aCIIjLknRqaJHCm9OZ4thznUatsZu8G2s2OEMrb1BUVOslOnyo3q8sODGNY05cN64HWBs0kv-pCpf5Op"/>
+<p class="text-xs font-medium text-center">Feeding</p>
+</div>
+<div class="bg-blue-50 dark:bg-blue-900/20 p-2 rounded">
+<img alt="Skincare" class="w-full aspect-square object-contain mb-2" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCu-WAX8uJM_NBXjctddNdt0XCfP-G4Tuj-XOlIlXCgzznzhZJsuh6bohJh-OSdpKLrFh-JtI-ky4cbh9UAzQCXaZarLKeTFNYj6EQoT1OS0bav2fqiddm4u9MnVLZOpmf3GHD-08mhW4wHEczMeaq1vn9o3JTpp7erqXjOe-qdLqLcUnmPfLPKj7xUgnenQ-pWNzSBGj_226PnY_goWncDKaT8U7BNI5KDRaLliysmIbpJ6ZyrQdMdveDQo6fFR7HbeopZhPvpEIKE"/>
+<p class="text-xs font-medium text-center">Skincare</p>
+</div>
+<div class="bg-blue-50 dark:bg-blue-900/20 p-2 rounded">
+<img alt="Sleepwear" class="w-full aspect-square object-contain mb-2" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDU-Sn0oduslYZQvGOz5yjUl9K8ICckZ96_gn1pkaOLcr-E5sUbXT3hgKfGbNiBa7l2CUySilwGzBUbwf7S3lYWN63kZKQuhCVlsE5aDNUh9n235Ec7ziDaeKyEApCDfXYllbQxxU-eGqfr7PocKayza-wTTxIUNZ-BCFBbRPteYhCCZ7Cz6pumnM4sNgsdYB9KfgaU_zZg2krRZFvd3Ns2T5rCPEZ-NZVtJ4RahEWSxa2wpzp8UQxU806nZ9C6m9MXahROr7CfatHw"/>
+<p class="text-xs font-medium text-center">Sleepwear</p>
+</div>
+</div>
+<button class="mt-4 text-sm text-blue-600 dark:text-blue-400 font-medium">Shop baby sales</button>
+</div>
+</div>
+</main>
+<footer class="bg-primary-dark pt-10 pb-24 px-6">
+<div class="grid grid-cols-2 gap-8 text-white/80 text-sm">
+<div class="space-y-3">
+<h3 class="text-white font-bold">Get to Know Us</h3>
+<ul class="space-y-2 text-xs">
+<li>Careers</li>
+<li>Blog</li>
+<li>About Us</li>
+<li>Sustainability</li>
+</ul>
+</div>
+<div class="space-y-3">
+<h3 class="text-white font-bold">Make Money</h3>
+<ul class="space-y-2 text-xs">
+<li>Sell on Store</li>
+<li>Sell Apps</li>
+<li>Affiliate Program</li>
+<li>Advertise Items</li>
+</ul>
+</div>
+</div>
+<div class="mt-12 flex justify-center">
+<div class="text-primary text-2xl font-black italic tracking-tighter">STOREFRONT</div>
+</div>
+<div class="mt-8 text-center text-[10px] text-white/50">
+<p>© 2024 Storefront.com, Inc. or its affiliates</p>
+</div>
+</footer>
+<nav class="fixed bottom-0 left-0 right-0 bg-white dark:bg-gray-900 border-t border-gray-200 dark:border-gray-800 flex justify-around items-center py-3 z-50">
+<div class="flex flex-col items-center text-primary">
+<span class="material-icons-outlined">home</span>
+<span class="text-[10px] font-medium">Home</span>
+</div>
+<div class="flex flex-col items-center text-gray-500 dark:text-gray-400">
+<span class="material-icons-outlined">person_outline</span>
+<span class="text-[10px] font-medium">Profile</span>
+</div>
+<div class="flex flex-col items-center text-gray-500 dark:text-gray-400">
+<div class="relative">
+<span class="material-icons-outlined">shopping_cart</span>
+<span class="absolute -top-1 -right-1 bg-primary text-white text-[8px] font-bold h-4 w-4 rounded-full flex items-center justify-center">3</span>
+</div>
+<span class="text-[10px] font-medium">Cart</span>
+</div>
+<div class="flex flex-col items-center text-gray-500 dark:text-gray-400">
+<span class="material-icons-outlined">menu</span>
+<span class="text-[10px] font-medium">Menu</span>
+</div>
+</nav>
+
+</body></html>

@@ -1,0 +1,47 @@
+BODY{
+
+color: rgb(5, 5, 5);
+background-color: #012E40;
+background-repeat: no-repeat;
+background-size: cover;
+background-position: center;
+background-attachment: fixed;
+
+}
+
+label{
+
+background-color:#026773;
+font-family: 'Times New Roman', Times, serif    ;
+font-size: large; color: #dfbedc;
+font-weight: bolder;
+cursor:pointer;
+
+
+}
+
+input{
+
+background-color: #3CA6A6 ;
+color: rgb(255, 255, 255);
+font-family: 'Times New Roman', Times, serif;
+font-size: 15px;
+border-color: rgba(127, 255, 212, 0.438);
+
+}
+
+.one{
+
+padding-left: 45vw;
+
+}
+
+a:hover{
+color: #3CA6A6;
+}
+
+a{
+color: #e8eeee;
+cursor:alias;
+
+}

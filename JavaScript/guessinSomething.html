@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Number Guessing Game</title>
+
+    <meta http-equiv="refresh" content="1500">
+
+    <style>
+
+body{
+
+    height: 100vh; width: 100vw;
+    background-color: #D0E2F2;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; font-size: 20%;
+    overflow: hidden;
+    display: flex; justify-content: center; align-items: center;
+
+}
+
+.mainContainer{
+
+    height: 65vh; width: 50vw;
+    background-color: #4E84A6;
+    display: flex; justify-content: center; align-items: center;
+    border-radius: 5% 5%  5% 5%;
+    transition:cubic-bezier(0.165, 0.84, 0.44, 1) 2s;
+
+}
+
+.mainContainer:hover{
+
+    height: 70vh; width: 60vw;
+
+}
+
+
+.basicStyle {
+
+text-align: center;
+height: 8vh; width: 30vw;
+
+}
+
+.submitBtn{
+
+text-align: center;
+height: 8vh; width: 30.4vw;
+
+}
+
+
+
+.title{
+    color: #D0E2F2;
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 10vh;
+
+}
+
+.showScore , .showResult{
+
+    display: block;
+    font-size: 1.5rem;
+    color: #D0E2F2;
+    text-align: center;
+    font-weight: bold;
+    margin-top: 3vh
+
+}
+
+    </style>
+
+</head>
+<body>
+
+<div class="mainContainer">
+
+
+    <form class=".formatMaintainance" id="form" >
+
+        
+        <h1 class="title">-- Guessing Game --</h1>
+        
+    <label  id="showError" style="font: 1rem solid; color: red;"></label>
+    <input class="basicStyle" id="guessNum" type="number" placeholder="Enter A valid Number between 1 to 100"> <br> <br>
+    <button class="submitBtn" id="submitBtn">Submit</button> <br> 
+    
+    <label id="showResult" class="showResult"></label><br> 
+    <label id="showScore" class="showScore"></label>
+
+    </form>
+
+</div>
+
+<script src="guessinSomething.js"></script>
+
+</body>
+</html>

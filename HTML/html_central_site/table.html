@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admission Merit List </title>
+    <style>
+
+        table,td,th{
+
+            border: 1px solid black ;
+            text-align: center;
+            border-collapse: collapse;
+            background-color: rgb(161, 155, 155)  ;
+            opacity: 900%;
+            
+        }
+
+        td,th{
+
+            
+            padding: 15px;
+
+        }
+
+        table{
+
+    width: 600px; height: 200px;
+
+        }
+
+        div{
+
+            background-image: url("data:image/jpeg;base64,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");
+            background-repeat: no-repeat;
+            background-size: cover;
+            position: absolute;
+           
+        }
+
+    </style>
+</head>
+
+<div>
+
+<body>
+
+   
+        
+
+    
+    <table >
+
+    <h1>Pheonix International</h1> 
+<hr>
+        <p>Become a part of the Phoenix House family! Discover our engaging, nurturing educational environment. Register your interest or apply now to offer your child a path to academic and personal growth.</p>
+<hr>
+            <tr>
+
+                <Th>  Id </Th>
+                <th> Roll No </th>
+                <th> Name </th> 
+                <th> Percentage </th>
+
+            </tr>
+
+            <tr>
+
+                <td> 1 </td>
+                <td> 12 </td>
+                <td> Nia patel </td>
+                <td> 101 </td>
+
+            </tr>
+
+        <tr>
+
+            <td> 2 </td>
+            <td> 36 </td>
+            <td> Nidhi Patel  </td>
+            <td> 100 </td>
+
+        </tr>
+
+        <tr>
+
+            <td> 3 </td>
+            <td> 42 </td>
+            <td> fumiko </td>
+            <td> 56 </td>
+
+        </tr>
+
+    </table>
+
+
+</body>
+
+</div>
+
+</html>

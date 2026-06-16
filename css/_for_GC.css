@@ -1,0 +1,30 @@
+html{
+
+font-size: 2rem;
+cursor: all-scroll
+
+}
+
+
+video{
+    width: 500px;
+}
+
+body{
+   background-color:rgb(101, 186, 235);
+   font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+h1{
+
+color: rgb(249, 249, 250);
+background-color: #5757e4;
+border: 1px solid rgb(118, 203, 224);
+}
+
+h2{
+
+cursor: grabbing;
+
+}
+

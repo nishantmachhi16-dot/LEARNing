@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Classroom Magic</title>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@700;800&family=Be+Vietnam+Pro:wght@400;500;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet">
+ 
+<link rel="icon" type="image/png" href="./Multimedia/Screenshot 2026-04-08 010132.png">
+
+ <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+
+        body {
+            font-family: 'Be Vietnam Pro', sans-serif;
+            background: #e0f7ff;
+            color: #000767;
+            min-height: 100vh;
+        }
+
+        /* ── Navigation ── */
+        nav {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            z-index: 50;
+            background: rgba(255, 255, 255, 0.7);
+            backdrop-filter: blur(12px);
+        }
+        .nav-inner {
+            max-width: 72rem;
+            margin: 0 auto;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 1rem 2rem;
+        }
+        .nav-brand {
+            font-family: 'Plus Jakarta Sans', sans-serif;
+            font-weight: 800;
+            font-size: 1.5rem;
+            color: #00677d;
+            letter-spacing: -0.02em;
+        }
+        .nav-back {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.35rem;
+            font-family: 'Be Vietnam Pro', sans-serif;
+            font-weight: 500;
+            font-size: 0.875rem;
+            color: #00677d;
+            text-decoration: none;
+            padding: 0.5rem 1.25rem;
+            border-radius: 9999px;
+            border: 1.5px solid #b3ebff;
+            background: rgba(179, 235, 255, 0.25);
+            transition: all 0.25s ease;
+        }
+        .nav-back:hover {
+            background: #b3ebff;
+            color: #004e5f;
+        }
+
+        /* ── Page Content ── */
+        .page-wrapper {
+            max-width: 72rem;
+            margin: 0 auto;
+            padding: 7rem 2rem 4rem;
+        }
+
+        /* Badge */
+        .page-badge {
+            display: inline-block;
+            font-family: 'Plus Jakarta Sans', sans-serif;
+            font-size: 0.7rem;
+            font-weight: 700;
+            letter-spacing: 0.15em;
+            text-transform: uppercase;
+            background: #b3ebff;
+            color: #004e5f;
+            padding: 0.35rem 1rem;
+            border-radius: 9999px;
+            margin-bottom: 1rem;
+        }
+
+        /* Page Heading */
+        .page-title {
+            font-family: 'Plus Jakarta Sans', sans-serif;
+            font-weight: 800;
+            font-size: 3rem;
+            color: #000767;
+            letter-spacing: -0.03em;
+            line-height: 1;
+            margin-bottom: 0.75rem;
+        }
+        .page-title span {
+            color: #00677d;
+        }
+        .page-subtitle {
+            color: #474747;
+            font-size: 1.05rem;
+            line-height: 1.7;
+            max-width: 38rem;
+            margin-bottom: 2.5rem;
+        }
+
+        /* ── Content Rectangle ── */
+        .content-card {
+            background: #ffffff;
+            border-radius: 1rem;
+            box-shadow: 0 20px 40px -15px rgba(0, 7, 103, 0.07);
+            padding: 3rem;
+            max-width: 100%;
+            border-left: 5px solid #00677d;
+        }
+        .content-card h2 {
+            font-family: 'Plus Jakarta Sans', sans-serif;
+            font-weight: 700;
+            font-size: 1.35rem;
+            color: #000767;
+            margin-bottom: 1rem;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+        .content-card h2 .material-symbols-outlined {
+            font-size: 1.5rem;
+            color: #00677d;
+        }
+        .content-card p {
+            color: #474747;
+            font-size: 0.95rem;
+            line-height: 1.8;
+        }
+
+        /* ── Footer ── */
+        footer {
+            margin-top: 5rem;
+            padding: 3rem 2rem;
+            background: #f4f2ff;
+            text-align: center;
+        }
+        footer .footer-text {
+            font-family: 'Plus Jakarta Sans', sans-serif;
+            font-weight: 700;
+            font-size: 1.05rem;
+            color: #00677d;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Navigation -->
+    <nav>
+        <div class="nav-inner">
+            <div class="nav-brand">In Honor of a Great Mind</div>
+            <a href="A1_Teacher_home.html" class="nav-back">
+                <span class="material-symbols-outlined" style="font-size:1.1rem;">arrow_back</span>
+                Back to Home
+            </a>
+        </div>
+    </nav>
+
+    <!-- Page Content -->
+    <div class="page-wrapper">
+
+        <span class="page-badge">Inside the Classroom</span>
+        <h1 class="page-title">Classroom <span>Magic</span></h1>
+        <p class="page-subtitle">
+            Relive the unforgettable moments — the teaching style, the energy, and the magic that turned ordinary lectures into extraordinary experiences.
+        </p>
+
+        <!-- Content Rectangle -->
+        <div class="content-card">
+            <h2>
+                <span class="material-symbols-outlined">school</span>
+                The Classroom Experience
+            </h2>
+            <p>
+What truly makes our mentor unforgettable is his unique and dynamic teaching style. He does not limit himself to just theory — instead, he brings concepts to life using practical, real-world examples that help us genuinely understand and relate to the subject. Often, he explains topics in a simple, relatable manner, like a father guiding his child, making even complex ideas feel easy and natural.
+<br>
+<br>
+He believes in interaction over memorization. His classes are never one-sided; instead, they are filled with continuous discussions, questions, and meaningful conversations that keep everyone involved.
+<br>*
+<br>
+Adding to this is his natural ability to make learning enjoyable. Whether it is cracking light jokes about geopolitics, movies, or everyday situations, he ensures the classroom never feels dull. His humor and energy turn even long lectures into engaging and lively sessions.
+<br>
+<br>
+One of his most distinctive habits is how he walks around the classroom, asks sudden questions, and calls students randomly — not to intimidate, but to ensure that everyone stays attentive and connected. This creates a sense of involvement and makes each student feel like a part of the learning process.
+<br>
+<br>
+The moment he enters the classroom, the entire atmosphere changes. His presence brings energy, creativity, and focus all at once. He has a way of making you feel that something valuable is about to be learned — and that learning will stay with you for a long time.
+            </p>
+        </div>
+
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-text">In Honor of a Great Mind</div>
+    </footer>
+
+</body>
+</html>

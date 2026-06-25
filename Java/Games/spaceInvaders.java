@@ -642,7 +642,15 @@ public class spaceInvaders extends JPanel implements ActionListener, KeyListener
     LinkedList<Block> shipBulletsLinkedList;
     int shipBulletsWidth = tilesize;
     int shipBulletsHeight = tilesize * 3;
-    int shipBulletsVelocityY = -10; // speed and opposite direction travel
+    int shipBulletsVelocityY = -10; // <-- speed and opposite direction travel
+
+
+    //health for player ship
+
+    int healthShipPlayer = 10;
+    int maxHealthShipPlayer;
+    int totalHealthShipPlayer;
+
 
     //Health bar for enemyships
 
@@ -684,6 +692,9 @@ public class spaceInvaders extends JPanel implements ActionListener, KeyListener
         repaint();
 
     }
+
+
+    //Keys Distribution for different task to be performed by USER for PC.
 
     @Override
     public void keyTyped(KeyEvent e) {
